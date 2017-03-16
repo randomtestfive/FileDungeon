@@ -40,6 +40,10 @@ public class RoomRenderer
 				g2d.drawImage(ts.getFloorTile(hashPair(x, y)), x, y, tilesize, tilesize, null);
 			}
 		}
+		for(Door d : r.getDoors())
+		{
+			d.render(g2d, tilesize);
+		}
 		for(FloorItem fi : r.getFloorItems())
 		{
 			fi.render(g2d, tilesize);
