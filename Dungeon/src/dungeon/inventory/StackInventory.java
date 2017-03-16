@@ -50,8 +50,17 @@ public class StackInventory extends Inventory implements KeyListener
 	@Override
 	public void render(Graphics2D g2d)
 	{
-		System.out.print(isOpen());
-		System.out.println(stack);
+//		System.out.print(isOpen());
+//		System.out.println(stack);
+		for(int y = 0; y < stack.size(); y++)
+		{
+			int s = 40;
+			if(stack.size() - 1 == y && isOpen())
+			{
+				s = 80;
+			}
+			stack.get(y).render(g2d, 10, (y*50)+10, s);
+		}
 	}
 
 	@Override

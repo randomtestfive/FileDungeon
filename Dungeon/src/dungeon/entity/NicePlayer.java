@@ -57,13 +57,14 @@ public class NicePlayer extends MoveEntity implements KeyListener
 	{
 		if(!inputs.isEmpty())
 		move(inputs.get(inputs.size()-1));
-		inventory.render(null);
+		//inventory.render(null);
 	}
 	
 	@Override
 	public void render(Graphics2D g2d, int size)
 	{
 		g2d.drawImage(sprites.get(d).get(0), (int)Math.round(dx.doubleValue()*size), (int)Math.round(dy.doubleValue()*size), size, size, null);
+		inventory.render(g2d);
 	}
 
 	@Override
