@@ -1,0 +1,7 @@
+size 10 10
+door 3 0 3 7 exit exit
+flooritem 3 3 key exit
+flooritem 5 5 key small
+flooritem 8 8 bellpepper
+flooritem 5 3 bellpepper
+entity player 4 4 20
