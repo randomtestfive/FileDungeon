@@ -32,9 +32,9 @@ public class Main
 				g2d.dispose();
 			}
 		};
-		Room r = RoomParser.parse(new File("H:/HORNETAY000/AP/dungeon/src/level/dungeon_entrance.room"));
+		Room r = RoomParser.parse(new File("H:/HORNETAY000/AP/textDungeon/Dungeon/src/level/dungeon_entrance.room"));
 		System.out.println(r);
-		Tileset ts = new Tileset("H:/HORNETAY000/AP/Dungeon/src/res");
+		Tileset ts = new Tileset("H:/HORNETAY000/AP/textDungeon/Dungeon/src/res");
 		rr = new RoomRenderer(r, ts);
 		int size = 50;
 		
